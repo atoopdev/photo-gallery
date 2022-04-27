@@ -1,22 +1,23 @@
 /* takes content size, padding, and border into account when determing size of content */
 * {
-    box-sizing: border-box;
-  }
-  
-  html {
-    font-size: 0.75rem;
-    font-family: "Roboto", sans-serif;
-  }
-  
-  html,
-  body {
-      width: 100vw;
-      height: 100vh;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-  }
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 0.75rem;
+  font-family: "Roboto", sans-serif;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 /* remove margins on typography to keep margins consistent */
 h1,
@@ -26,14 +27,22 @@ p {
   margin: 0;
 }
 
-.photo-container{
-    display: flex;
-    flex-wrap: wrap;
-
+img {
+  max-width: 100%;
+  display: block;
+}
+.photo-container {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.photo{
-    border:0.1rem solid white;
-    border-radius: 0.7rem;
-    margin: 0.5rem;
+.photo {
+  border: 0.1rem solid white;
+  border-radius: 0.7rem;
+  margin: 0.5rem;
+}
+
+.my-photo {
+  border: 5px solid red;
+  width: 200px;
 }
