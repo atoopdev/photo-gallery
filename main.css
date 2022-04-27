@@ -23,5 +23,13 @@ p {
 }
 
 .container{
+    display: flex;
+    flex-wrap: wrap;
 
+}
+
+.photo{
+    border:0.1rem solid white;
+    border-radius: 0.7rem;
+    margin: 1rem;
 }
