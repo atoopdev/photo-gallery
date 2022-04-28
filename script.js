@@ -54,7 +54,7 @@ function loadImage(e){
 
     let img = document.getElementById(clickedImageID)
     console.log(img.src)
-    let selectedImg = `${img.src.substring(0, img.src.length-7)}200/200`
+    let selectedImg = `${img.src.substring(0, img.src.length-7)}300/300`
     console.log(selectedImg)
     document.getElementById("my-photo").src = selectedImg
     

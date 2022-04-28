@@ -28,22 +28,21 @@ p {
   margin: 0;
 }
 
-img {
-  /* max-width: 100%; */
-  /* display: block; */
-}
 .photo-container {
   display: flex;
   flex-wrap: wrap;
+  order: 1;
+  
 }
 
-.photo {
+.photo, 
+.my-photo {
   border: 0.1rem solid white;
   border-radius: 0.7rem;
   margin: 0.5rem;
 }
 
-.my-photo {
-  /* border: 5px solid red; */
-  /* width: 200px; */
+.my-photo{
+  order: 2;
+  
 }
